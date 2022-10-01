@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    line-height: 2em;
+    font-family:$font-body, sans-serif;
+    background: $backgroundImage $white repeat-x;
+  }
+
+main {
+    width:940px;
+    margin:0 auto;
+    padding:0 10px;
+    @include break(maxwidth945px){
+      width:768px;
+    }
+    @include break(maxwidth767px){
+      width:460px;
+    }
+    @include break(maxwidth459px){
+      width:300px;
+    }
+ }
+ 
+ section{
+  @include break(maxwidth459px){
+    width:95%;
+  }
+ }
+
+ 
